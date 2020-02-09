@@ -1,0 +1,4 @@
+
+# Simple minecraft bot setup
+
+
