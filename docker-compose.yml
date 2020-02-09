@@ -1,0 +1,41 @@
+
+version: "2"
+
+services:
+
+    logdb:
+      image : mariadb
+      environment:
+        MYSQL_PASSWORD: "pass"
+        MYSQL_DATABASE: "minecraft"
+        MYSQL_USER: "username"
+        MYSQL_ROOT_PASSWORD: "THAT"
+      volumes:
+        - ./logdb:/var/lib/mysql
+      ports:
+        - "3306:3306"
+
+    minecraft-server:
+      image: itzg/minecraft-server
+      ports:
+        - "25565:25565"
+
+      environment:
+        EULA: "TRUE"
+        TYPE: "BUKKIT"
+        #VERSION : "1.8-R0.1-SNAPSHOT-LATEST"
+
+        VERSION : "1.8.8-R0.1-SNAPSHOT-latest"
+        #VERSION: "1.4.6-R0.4-SNAPSHOT"
+        DIFFICULTY: "hard"
+        MOTD: "Fanf's server"
+        INIT_MEMORY: "1G"
+        MEMORY : "3G"
+        ONLINE_MODE : "FALSE"
+      volumes:
+        - "./data:/data"
+
+      container_name: mc
+
+      tty: false
+      stdin_open: false

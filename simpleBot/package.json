@@ -1,0 +1,20 @@
+{
+  "name": "simplebot",
+  "version": "1.0.0",
+  "description": "fdqmlsj",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "pretest": "npm run lint",
+    "lint": "standard",
+    "fix": "standard --fix",
+    "prepare": "npm install require-self && require-self",
+    "prepublishOnly": "cp docs/README.md README.md"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mineflayer": "2.10.0"
+  },
+  "devDependencies": {},
+  "author": ""
+}
