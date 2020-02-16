@@ -33,7 +33,7 @@ services:
         VERSION : "1.8.8-R0.1-SNAPSHOT-latest"
         #VERSION: "1.4.6-R0.4-SNAPSHOT"
         DIFFICULTY: "hard"
-        MOTD: "Fanf's server"
+        MOTD: "188 loggedEnv"
         INIT_MEMORY: "1G"
         MEMORY : "3G"
         ONLINE_MODE : "FALSE"

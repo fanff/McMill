@@ -13,7 +13,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "mineflayer": "2.10.0"
+    "log": "^6.0.0",
+    "log-node": "^7.0.0",
+    "mineflayer": "2.10.0",
+    "mineflayer-blockfinder": "0.0.7",
+    "mineflayer-navigate": "0.0.10"
   },
   "devDependencies": {},
   "author": ""
