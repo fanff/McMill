@@ -15,6 +15,7 @@ services:
       ports:
         - "3306:3306"
 
+
     minecraft-server:
       container_name: mc
       image: itzg/minecraft-server
@@ -28,14 +29,12 @@ services:
       environment:
         EULA: "TRUE"
         TYPE: "BUKKIT"
-        #VERSION : "1.8-R0.1-SNAPSHOT-LATEST"
-
         VERSION : "1.8.8-R0.1-SNAPSHOT-latest"
-        #VERSION: "1.4.6-R0.4-SNAPSHOT"
         DIFFICULTY: "hard"
         MOTD: "188 loggedEnv"
         INIT_MEMORY: "1G"
         MEMORY : "3G"
         ONLINE_MODE : "FALSE"
+
       tty: false
       stdin_open: false
